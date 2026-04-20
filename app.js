@@ -5,7 +5,10 @@
 
 const USER   = 'Darmasus';
 const API    = `https://api.github.com/users/${USER}/repos?per_page=100&sort=updated`;
-const HIDDEN = new Set(['nvc-dhl-tracker']); // skip forks / archived
+const HIDDEN = new Set([
+  'nvc-dhl-tracker',    // fork
+  'Darmasus.github.io'  // this site — avoids recursive listing
+]);
 
 // GitHub's official language colors — trimmed.
 const LANG_COLORS = {
@@ -23,6 +26,7 @@ const LANG_COLORS = {
   'Ruby':       '#ff5252',
   'Swift':      '#FF8C00',
   'Kotlin':     '#A97BFF',
+  'Jupyter Notebook': '#DA5B0B',
   'Other':      '#858585'
 };
 
@@ -41,7 +45,13 @@ const OVERRIDES = {
   'WeightTracker':
     'Mobile weight-tracking client in Java with local persistence & goal screens.',
   'labense':
-    'Upload medical lab results, get plain-English explanations and health tips. Python.'
+    'Upload medical lab results, get plain-English explanations and health tips. Python.',
+  'pantryguard':
+    'Pantry & food-inventory tracker prototype — TypeScript client with expiry alerts.',
+  'Pirate-Game':
+    'Reinforcement-learning agent solving a pirate treasure-map maze. Python + Jupyter.',
+  'travlr':
+    'Full-stack travel-booking app — customer-facing site + admin console.'
 };
 
 // --------- Utilities ---------
