@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Darmasus — Portfolio. A retro arcade-style stage-select for my GitHub repos." />
+  <meta name="theme-color" content="#0d0221" />
+  <title>DARMASUS // PORTFOLIO — INSERT COIN</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="crt-vignette" aria-hidden="true"></div>
+
+  <header class="hud">
+    <div class="hud__cell">
+      <span class="cursor">▶</span> SYSTEM: DARMASUS.EXE
+    </div>
+    <div class="hud__cell hud__cell--mid">
+      [ PLAYER 1 ]
+    </div>
+    <div class="hud__cell hud__cell--right">
+      STATUS: <span class="status-ok">ONLINE</span> &nbsp;·&nbsp;
+      <span id="hud-date">—</span>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ TITLE SCREEN ============ -->
+    <section class="title-screen">
+      <p class="attract">★ ★ ★ &nbsp; ATTRACT MODE &nbsp; ★ ★ ★</p>
+      <h1 class="title" data-text="DARMASUS">DARMASUS</h1>
+      <p class="subtitle">» &nbsp; P O R T F O L I O &nbsp; //  &nbsp; 2026  &nbsp; «</p>
+      <p class="flavor">A JOURNEY THROUGH <span class="blink-soft">&lt;/code&gt;</span></p>
+      <p class="press-start blink">
+        ◆ PRESS <kbd>SCROLL</kbd> TO CONTINUE ◆
+      </p>
+    </section>
+
+    <!-- ============ PLAYER STATS ============ -->
+    <section class="player-card">
+      <h2 class="section-title">▰ ▰ &nbsp; PLAYER STATS &nbsp; ▰ ▰</h2>
+
+      <div class="stat-grid">
+        <div class="stat-box">
+          <span class="stat-label">CLASS</span>
+          <span class="stat-value">SOFT. ENG</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-label">PROJECTS</span>
+          <span class="stat-value" id="stat-projects">--</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-label">LANGUAGES</span>
+          <span class="stat-value" id="stat-langs">--</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-label">LAST CMT</span>
+          <span class="stat-value" id="stat-updated">--</span>
+        </div>
+      </div>
+
+      <div class="dialog-box">
+        <div class="dialog-portrait">
+          <svg class="invader" viewBox="0 0 13 11" aria-hidden="true">
+            <rect x="3" y="0" width="1" height="1"/><rect x="9" y="0" width="1" height="1"/>
+            <rect x="4" y="1" width="1" height="1"/><rect x="8" y="1" width="1" height="1"/>
+            <rect x="3" y="2" width="7" height="1"/>
+            <rect x="2" y="3" width="2" height="1"/><rect x="5" y="3" width="3" height="1"/><rect x="9" y="3" width="2" height="1"/>
+            <rect x="1" y="4" width="11" height="1"/>
+            <rect x="1" y="5" width="1" height="1"/><rect x="3" y="5" width="7" height="1"/><rect x="11" y="5" width="1" height="1"/>
+            <rect x="1" y="6" width="1" height="1"/><rect x="11" y="6" width="1" height="1"/>
+            <rect x="3" y="7" width="2" height="1"/><rect x="8" y="7" width="2" height="1"/>
+          </svg>
+        </div>
+        <div class="dialog-content">
+          <p class="dialog-name">» DARMASUS:</p>
+          <p class="dialog-text">
+            GREETINGS, TRAVELER. I BUILD IN C++, JAVA, TS &amp; PYTHON —
+            ACROSS GRAPHICS ENGINES, COMMERCE TOOLING, AND HEALTH-TECH
+            EXPERIMENTS. MY STAGES ARE BELOW.
+            <br />CHOOSE ONE AND PRESS START.
+          </p>
+          <p class="dialog-continue blink">▾</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STAGE SELECT ============ -->
+    <section class="stage-select" id="stages">
+      <h2 class="section-title">▰ ▰ &nbsp; SELECT YOUR STAGE &nbsp; ▰ ▰</h2>
+
+      <div class="filters" role="tablist" aria-label="Filter stages by language">
+        <span class="filters__label">GENRE ▸</span>
+        <button class="filter is-active" type="button" data-lang="all">
+          ALL <span class="count" id="count-all">--</span>
+        </button>
+      </div>
+
+      <p class="count-row">
+        <span class="mono-amber">STAGES FOUND:</span>
+        <span id="visible-count" class="mono-green">--</span>
+      </p>
+
+      <div class="grid" id="grid" aria-busy="true">
+        <div class="loading">▸ LOADING STAGES FROM GITHUB.COM/DARMASUS ...</div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ CREDITS ============ -->
+  <footer class="credits">
+    <h3 class="credits__title">▰ ▰ &nbsp; END OF LINE &nbsp; ▰ ▰</h3>
+    <div class="credits__list">
+      <div><span>GAME DESIGN</span><span>DARMASUS</span></div>
+      <div><span>ENGINE</span><span>HTML · CSS · JS</span></div>
+      <div><span>DATA FEED</span><span>GITHUB REST API</span></div>
+      <div><span>TYPE</span><span>PRESS START 2P · VT323</span></div>
+      <div><span>COPYRIGHT</span><span>&copy; 2026 NO RIGHTS RESERVED</span></div>
+    </div>
+    <p class="insert-coin"><span class="blink">▶ &nbsp; INSERT COIN &nbsp; ◀</span></p>
+    <p class="credits__link">
+      <a href="https://github.com/Darmasus" target="_blank" rel="noopener">
+        » github.com/Darmasus
+      </a>
+    </p>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
