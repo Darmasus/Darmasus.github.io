@@ -47,7 +47,7 @@ const OVERRIDES = {
   'labense':
     'Upload medical lab results, get plain-English explanations and health tips. Python.',
   'pantryguard':
-    'Pantry & food-inventory tracker prototype — TypeScript client with expiry alerts.',
+    'Scan products in-store and get instant allergen warnings. TypeScript.',
   'Pirate-Game':
     'Reinforcement-learning agent solving a pirate treasure-map maze. Python + Jupyter.',
   'travlr':
