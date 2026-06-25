@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="CS 499 Computer Science Capstone ePortfolio for Alejandro Coitinho." />
+  <meta name="theme-color" content="#0d0221" />
+  <title>CS 499 // Capstone ePortfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    .capstone-wrap { width: min(1100px, calc(100% - 28px)); margin: 0 auto 64px; }
+    .capstone-panel { border: 2px solid var(--cyan); background: rgba(10, 10, 26, .82); box-shadow: 0 0 0 4px rgba(0, 255, 255, .08), 0 0 30px rgba(0, 255, 255, .18); padding: 22px; margin: 22px 0; }
+    .capstone-panel p, .capstone-panel li { font-family: 'VT323', monospace; font-size: clamp(1.25rem, 2.1vw, 1.65rem); line-height: 1.08; color: var(--paper); }
+    .capstone-panel ul { margin: 10px 0 0 1.2rem; padding: 0; }
+    .capstone-kicker { color: var(--amber); font-family: 'Press Start 2P', system-ui; font-size: .75rem; letter-spacing: .08em; }
+    .capstone-title { font-family: 'Press Start 2P', system-ui; color: var(--cyan); text-shadow: 0 0 12px rgba(0, 255, 255, .7); line-height: 1.35; font-size: clamp(1.2rem, 4vw, 2.4rem); margin: 14px 0; }
+    .capstone-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+    .capstone-card { border: 1px solid rgba(255,255,255,.25); background: rgba(255,255,255,.045); padding: 18px; }
+    .capstone-card h3 { font-family: 'Press Start 2P', system-ui; font-size: .78rem; line-height: 1.35; color: var(--green); margin: 0 0 12px; }
+    .capstone-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 18px; }
+    .capstone-button { display: inline-block; border: 2px solid var(--amber); color: var(--amber); background: rgba(255, 190, 11, .08); padding: 10px 14px; text-decoration: none; font-family: 'Press Start 2P', system-ui; font-size: .7rem; line-height: 1.35; box-shadow: 0 0 16px rgba(255, 190, 11, .18); }
+    .capstone-button:hover, .capstone-button:focus { background: rgba(255, 190, 11, .18); color: var(--paper); }
+    .capstone-muted { color: rgba(255,255,255,.72) !important; }
+    .capstone-note { border-left: 4px solid var(--magenta); padding-left: 14px; }
+  </style>
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="crt-vignette" aria-hidden="true"></div>
+
+  <header class="hud">
+    <div class="hud__cell"><span class="cursor">▶</span> SYSTEM: CS499.EXE</div>
+    <div class="hud__cell hud__cell--mid">[ CAPSTONE MODE ]</div>
+    <div class="hud__cell hud__cell--right">STATUS: <span class="status-ok">ONLINE</span></div>
+  </header>
+
+  <main class="capstone-wrap">
+    <section class="title-screen">
+      <p class="attract">★ ★ ★ &nbsp; FINAL PROJECT &nbsp; ★ ★ ★</p>
+      <h1 class="title" data-text="CS 499">CS 499</h1>
+      <p class="subtitle">» COMPUTER SCIENCE CAPSTONE ePORTFOLIO «</p>
+      <p class="flavor">ALEJANDRO COITINHO // WEIGHT TRACKER ARTIFACT</p>
+      <p class="press-start blink">◆ REVIEW THE BUILD BELOW ◆</p>
+    </section>
+
+    <section class="capstone-panel">
+      <p class="capstone-kicker">MISSION BRIEF</p>
+      <h2 class="capstone-title">Weight Tracker Android Application</h2>
+      <p>
+        This CS 499 ePortfolio page documents the enhancement of my Weight Tracker Android application across three required computer science categories: software design and engineering, algorithms and data structures, and databases. The original artifact was created in CS 360 Mobile Architecture and Programming, then improved throughout CS 499 through code review, implementation, testing, and reflection.
+      </p>
+      <div class="capstone-links">
+        <a class="capstone-button" href="https://github.com/Darmasus/WeightTracker" target="_blank" rel="noopener">OPEN REPOSITORY</a>
+        <a class="capstone-button" href="https://darmasus.github.io/" rel="noopener">RETURN TO MAIN PORTFOLIO</a>
+      </div>
+    </section>
+
+    <section class="capstone-panel">
+      <p class="capstone-kicker">REQUIRED MATERIALS</p>
+      <div class="capstone-grid">
+        <article class="capstone-card">
+          <h3>Code Review Video</h3>
+          <p class="capstone-muted">A recorded walkthrough explaining the existing code, identified weaknesses, planned enhancements, and final improvements.</p>
+          <p class="capstone-note">Add the final video link here after uploading it to YouTube, Google Drive, or another shareable location.</p>
+        </article>
+        <article class="capstone-card">
+          <h3>Original Artifact</h3>
+          <p class="capstone-muted">The original CS 360 Weight Tracker application before capstone enhancements.</p>
+          <p class="capstone-note">Store the original ZIP or original branch in the repository and link it here if required by the instructor.</p>
+        </article>
+        <article class="capstone-card">
+          <h3>Enhanced Artifact</h3>
+          <p class="capstone-muted">The final enhanced Weight Tracker application demonstrating all three capstone categories.</p>
+          <p><a href="https://github.com/Darmasus/WeightTracker" target="_blank" rel="noopener">View the enhanced project on GitHub.</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="capstone-panel">
+      <p class="capstone-kicker">ENHANCEMENT ONE</p>
+      <h2 class="capstone-title">Software Design and Engineering</h2>
+      <p>
+        The software design enhancement focused on improving maintainability, readability, validation, secure design, and separation of concerns. I added reusable helper classes and updated the activity logic so validation and security responsibilities were no longer mixed directly into screen code.
+      </p>
+      <ul>
+        <li>Created ValidationHelper.java for reusable validation checks.</li>
+        <li>Created SecurityHelper.java for password hashing responsibilities.</li>
+        <li>Updated LoginActivity.java to improve login and account validation.</li>
+        <li>Updated DashboardActivity.java to improve weight validation and error handling.</li>
+        <li>Improved defensive programming by checking database operation results.</li>
+      </ul>
+    </section>
+
+    <section class="capstone-panel">
+      <p class="capstone-kicker">ENHANCEMENT TWO</p>
+      <h2 class="capstone-title">Algorithms and Data Structures</h2>
+      <p>
+        The algorithms and data structures enhancement improved how the application processes stored weight data. Instead of only displaying individual records, the application now performs grouped analysis, trend detection, and structured collection processing.
+      </p>
+      <ul>
+        <li>Added weekly average calculations in DatabaseHelper.java.</li>
+        <li>Used SQL aggregation to group and calculate weight averages.</li>
+        <li>Used LinkedHashMap and Map traversal to process grouped data.</li>
+        <li>Added trend detection logic in DashboardActivity.java.</li>
+        <li>Improved sorting by using the weight date column instead of insertion order.</li>
+      </ul>
+    </section>
+
+    <section class="capstone-panel">
+      <p class="capstone-kicker">ENHANCEMENT THREE</p>
+      <h2 class="capstone-title">Databases</h2>
+      <p>
+        The database enhancement focused on improving data integrity, query performance, and reliability. I added database indexes and duplicate-entry prevention so the application can better protect the accuracy of stored weight records.
+      </p>
+      <ul>
+        <li>Added indexes for username, date, and combined username/date lookups.</li>
+        <li>Added weightEntryExists() in DatabaseHelper.java.</li>
+        <li>Updated DashboardActivity.java to prevent duplicate entries for the same user and date.</li>
+        <li>Improved database integrity before inserting new records.</li>
+        <li>Improved the database layer for future scalability.</li>
+      </ul>
+    </section>
+
+    <section class="capstone-panel">
+      <p class="capstone-kicker">PROFESSIONAL SELF-ASSESSMENT</p>
+      <h2 class="capstone-title">Capstone Reflection</h2>
+      <p>
+        This capstone helped me demonstrate growth in software engineering, algorithms, database design, and secure development. The Weight Tracker artifact shows my ability to revisit existing code, identify practical weaknesses, implement targeted improvements, test the results, and explain the work through professional documentation and a code review video.
+      </p>
+      <p>
+        The project reflects my long-term goal of becoming a stronger software developer with the ability to build, maintain, secure, and improve applications in a professional environment.
+      </p>
+    </section>
+  </main>
+
+  <footer class="credits">
+    <h3 class="credits__title">▰ ▰ &nbsp; END OF CAPSTONE &nbsp; ▰ ▰</h3>
+    <p class="insert-coin"><span class="blink">▶ &nbsp; READY FOR REVIEW &nbsp; ◀</span></p>
+  </footer>
+</body>
+</html>
